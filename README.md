@@ -4,6 +4,7 @@ here will be:
 - Port check
 - CPU and RAM monitoring
 ## whats now ?
-- i added a scanning tools for local area devices by adding some new functions
-## next step
+- i fix the problem with access rights using venv 
+- i add a simple port scanner
+## 30 sep
 - i will try to upgrade it so it can be execute more easily because now it runs only with a special command(theres a problem with access rights)
