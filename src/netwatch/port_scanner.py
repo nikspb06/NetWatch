@@ -17,11 +17,11 @@ def scan_local_devices_ports(ip,ports):
     open_device_ports = list()
 
     for port in ports:
-        if port_scaner(ip,port) == True:
-            open_device_ports.append(port)
-        
+        try:
+            if port_scaner(ip, port):
+                open_device_ports.append(port)
+        except OverflowError:
+            return "incorect port"      
     return open_device_ports
 
 
-func = scan_local_devices_ports("192.168.0.1",[-1])
-print(func)
